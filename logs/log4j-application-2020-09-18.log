@@ -1,0 +1,6 @@
+21:55:39.350 [main] INFO  xpheno.testcases.DemoTest - Current Url is :->https://www.ixigo.com/
+21:57:44.521 [main] INFO  xpheno.testcases.DemoTest - Application launched
+21:57:46.170 [main] INFO  xpheno.testcases.DemoTest - Title is :->ixigo - Flights, Train Reservation, Hotels, Air Tickets, Bus Booking
+21:57:47.840 [main] INFO  xpheno.testcases.DemoTest - Current Url is :->https://www.ixigo.com/
+22:00:35.169 [main] INFO  xpheno.testcases.DemoTest - Application launched
+22:00:36.751 [main] INFO  xpheno.testcases.DemoTest - Title is :->ixigo - Flights, Train Reservation, Hotels, Air Tickets, Bus Booking
