@@ -38,7 +38,9 @@ public class Constants {
 	public static final String TITLE="ixigo - Flights, Train Reservation, Hotels, Air Tickets, Bus Booking";
 	
 	public static final String CURRENT_URL="https://www.ixigo.com/";
-	public static final String FROM_PLACE = "Pune";
-	public static final String TO_PLACE = "Hyderabad";
+/*	public static final String FROM_PLACE = "Pune";
+	public static final String TO_PLACE = "Hyderabad";*/
+	public static final String FROM_PLACE = "Bengaluru";
+	public static final String TO_PLACE = "Kolkata";
 
 }

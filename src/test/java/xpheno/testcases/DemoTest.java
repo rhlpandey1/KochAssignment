@@ -21,7 +21,6 @@ public class DemoTest extends Base {
 	public void initialize() throws IOException
 	{
 		driver=initializeDriver();
-		//driver.get(Utilities.getProperty("url"));
 	}
 	
 	@Test(priority=1)
@@ -37,13 +36,17 @@ public class DemoTest extends Base {
 		assertEquals(Constants.CURRENT_URL, driver.getCurrentUrl());
 	}
 	@Test(priority=2)
-	public void booking() {
+	public void booking() throws InterruptedException {
 		IxigoBookingPage ixigoBookingPage=new IxigoBookingPage(driver);
-		ixigoBookingPage.enterFromToDetails(ixigoBookingPage.getFrom(),Constants.FROM_PLACE);
-		ixigoBookingPage.enterFromToDetails(ixigoBookingPage.getTo(),Constants.TO_PLACE);
+		ixigoBookingPage.clickRoundTrip();
+		ixigoBookingPage.enterFromToDetails(ixigoBookingPage.clearFrom(),ixigoBookingPage.getFrom(),Constants.FROM_PLACE);
+		ixigoBookingPage.enterFromToDetails(ixigoBookingPage.clearTo(),ixigoBookingPage.getTo(),Constants.TO_PLACE);
 		ixigoBookingPage.selectDeptDate("17", "November");
-		//ixigoBookingPage.selectReturnDate("24", "December");
+		ixigoBookingPage.selectReturnDate("24", "December");
+		ixigoBookingPage.selectTravellers(2);
 		ixigoBookingPage.clickSearch();
+		ixigoBookingPage.validateFilters();
+		ixigoBookingPage.printAirlineDetails(5000);
 		
 	}
 	
